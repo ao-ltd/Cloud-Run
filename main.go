@@ -18,6 +18,7 @@ func main() {
 		fmt.Fprintln(w, "Hello Cloud Run with Go!")
 	})
 
+	log.Printf("TEST")
 	log.Printf("Listening on port %s\n", port)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
