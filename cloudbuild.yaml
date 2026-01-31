@@ -4,6 +4,7 @@ steps:
       - run
       - deploy
       - callback-connect
+      - --project=882901306133
       - --source=.
       - --region=asia-northeast1
       - --platform=managed
