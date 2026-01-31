@@ -1,0 +1,13 @@
+steps:
+  - name: gcr.io/cloud-builders/gcloud
+    args:
+      - run
+      - deploy
+      - callback-connect
+      - --source=.
+      - --region=asia-northeast1
+      - --platform=managed
+      - --no-allow-unauthenticated
+
+options:
+  logging: CLOUD_LOGGING_ONLY
